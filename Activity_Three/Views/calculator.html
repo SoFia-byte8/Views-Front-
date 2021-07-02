@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../Styles/calculador.css">
+</head>
+<body style="background-color: rgba(143, 142, 142, 0.432)">
+    <div class="container">
+        <div class="calculator" class="column">
+            <br><h1 style="text-align: center; font-size:45px;"> Calculadora / Calculator </h1><hr><br>
+            <div class="calculator-info">
+                <input type="text" id="data" disabled />
+            </div>
+            <div class="calculator-data row">
+                <div class="row" style=" width: 90%; flex-wrap: wrap;">
+                    <input type="button" class="btn-number" value="1" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="2" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="3" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="4" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="5" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="6" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="7" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="8" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="9" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="Clear" onclick="limpiar()">
+                    <input type="button" class="btn-number" value="0" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="=" onclick="mostrarResultado()">
+                </div>
+                <div class="column" style="width: 10%; text-align: center; ">
+                    <input type="button" class="btn-operator" value="+" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="-" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="*" onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="/" onclick="pintarOperador(this.value)">
+                </div>
+            </div>
+        </div>
+    </div><br><br><hr>
+    <br><br>
+    <div class="boton-dia">
+        <button id="dias" onclick="preguntarDia()">Preguntar Día</button>
+    </div>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../Functions/calculator.js"></script>
+</body>
+
+</html>

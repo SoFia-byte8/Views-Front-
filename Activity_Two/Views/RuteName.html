@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Name Register</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/RuteName.css">
+</head>
+<body style="background-color:rgba(83, 83, 83, 0.295)">
+    
+    <h1>Exercise Js</h1><hr>
+    <main class="contenido"> 
+      <form>
+        <div class="row g-3">
+          <label for="text1" class="col-sm-2 col-form-label">Nombre:</label>
+          <div class="col-6">
+          <input type="text" class="form-control" id="txtGo" placeholder="Digite Su Nombre">
+          <div class="form-text">¡Porfavor! Digite un nombre legible.</div>
+          </div>
+          <div class="col-4">
+            <input id="count" type="number" disabled>
+          </div>
+        </div><br><br><br>
+        <div class="btn">
+          <button type="button" class="btn btn-outline-dark"  onclick="reset()">Reset</button>
+          <button type="button" class="btn btn-outline-dark">Enviar</button>
+        </div><br><br>
+          <h2>Lo Ingresado:</h2>
+          <br>
+          <form id="txtExit"></form>
+      </form>
+    </main>
+    <script src="../Fuctions/RuteName.js"></script>
+</body>
+</html>

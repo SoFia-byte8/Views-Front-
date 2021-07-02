@@ -1,0 +1,74 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+h1 {
+    display: block;
+    font-size: 2em; 
+}
+
+.container {
+    width: 60%;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+
+.calculator-data {
+    /*background-color: thistle;*/
+    border: 5px #FAFAFA solid;
+    border-right: 5px #FAFAFA solid;
+    border-bottom: 5px #FAFAFA solid;
+    padding: 1%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-number {
+    width: 30%;
+    font-size: 25px;
+    margin: 0% 1% 1% 1%;
+    background-color: black;
+    color: white;
+    border: 2px aqua solid;
+    border-radius: 10px;
+}
+
+.btn-operator {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 4%;
+    background-color: black;
+    color: rgb(127, 173, 123);
+    border: 2px rgb(23, 221, 221) solid;
+    border-radius: 10px;
+}
+
+#data {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 4%;
+    font-size: 26px;
+    color: white;
+    background-color: rgba(14, 13, 13, 0.911);
+}
+.boton-dia {
+    text-align:center;
+    margin-bottom: 2px;
+}
+.boton-dia button {
+    width: 18%;
+    height: 40px;
+    border: 2px rgba(190, 26, 14, 0.897) solid;
+    background-color: rgba(216, 38, 38, 0.897);
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
